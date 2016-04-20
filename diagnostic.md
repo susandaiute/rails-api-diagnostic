@@ -6,77 +6,81 @@ Place your responses inside the fenced code-blocks where indicated by comments.
 What is the purpose of a backend?
 
 ```bash
-// your response here
+To store data which you can read/manipulate
 ```
 
 Which layer in the MVC pattern is used by the controller to fetch data?
 
 ```bash
-// your response here
+The controller layer.  Is this a trick question cause its too early for that shiz.
 ```
 
 Which layer in the MVC pattern communicates with the model?
 
 ```bash
-// your response here
+The model layer.
 ```
 
 Why don't we use views in our interpretation of the MVC pattern?
 
 ```bash
-// your response here
+Theyre silly and outdated.
 ```
 
 What does C.R.U.D stand for?
 
 ```bash
-// your response here
+Create Read Update Destroy
 ```
 
 In which part of the MVC pattern can we find C.R.U.D actions?
 
 ```bash
-// your response here
+The model
 ```
 List at least 5 standard actions that C.R.U.D corresponds to?
 
 ```bash
-// your response here
+GET PATCH DELETE CREATE DESTROY
 ```
 
 A user action fires a `GET` request for `person/1`. Explain in detail each step
 required for data to be returned to the client. (bullet points or ordered list)
 
 ```bash
-// your response here
-```
+That request goes to the server which communicates with the controller.  The controller
+then communicates with the model who retrieves the data from the database and returns it to the
+controller.  Then the info moves back up the chain to the server and then the user.
+  ```
 
 What is the command to generate a new rails-api app?
 
 ```bash
-// your response here
+rails new <appname>
 ```
 
 What is the command to start an instance of a rails server?
 
 ```bash
-// your response here
-```
+rails s```
 
 What are the commands to drop, create and migrate a database? (3 bullet points)
 
 ```bash
-// your response here
+db:drop
+db:create
+db:migrate
 ```
 
 What is the command to scaffold a pet with a name and an age?
 
 ```bash
-// your response here
+rails generate scaffold Pet name:string age:integer
 ```
 
 List two advantages of using serializers? (2 bullet points)
 
 ```bash
-// your response here
+It formats the JSON that the server gets back from the controller.
+You can custom generate a serializer to your specifications.
 ```
